@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Arc Welding and Fabrication</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .logo {
+            width: 100px;
+        }
+        .gallery, .contact, .subscribe {
+            margin: 40px 0;
+        }
+        .contact form, .subscribe form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="button"] {
+            background-color: silver;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="path_to_logo.png" alt="Mystic Arc Welding and Fabrication Logo" class="logo">
+            <h1>Mystic Arc Welding and Fabrication</h1>
+        </header>
+
+        <section class="showcase">
+            <h2>Craftsmanship Beyond Compare</h2>
+            <p>Explore our gallery to see the precision and artistry in every weld we make.</p>
+        </section>
+
+        <section class="gallery">
+            <h2>Showcase of Our Work</h2>
+            <!-- Add images of your welding work here -->
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="your_contact_form_submission_url" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="your_subscription_form_submission_url" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="subscription_email" name="subscription_email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
