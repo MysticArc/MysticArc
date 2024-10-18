@@ -23,7 +23,7 @@
         .logo {
             width: 100px;
         }
-        .gallery, .social-media, .contact-info, .about, .services {
+        .gallery, .social-media, .contact-info, .about, .services, .videos {
             margin: 40px 0;
         }
         .gallery img {
@@ -35,7 +35,7 @@
             margin-right: 15px;
             text-decoration: none;
         }
-        .contact-info, .about, .services {
+        .contact-info, .about, .services, .videos {
             text-align: center;
         }
         .button {
@@ -46,6 +46,11 @@
             border-radius: 5px;
             display: inline-block;
             margin-top: 10px;
+        }
+        .videos iframe {
+            width: 100%;
+            height: 315px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -70,13 +75,13 @@
         <section class="services">
             <h2>Our Services</h2>
             <p>We offer a range of welding and fabrication services to meet your needs, including:</p>
-            <ul>
-                <li>MIG Welding</li>
-                <li>TIG Welding</li>
-                <li>Stick Welding</li>
-                <li>Custom Fabrication</li>
-                <li>Repair and Maintenance</li>
-            </ul>
+            <div class="services-list">
+                <p>MIG Welding</p>
+                <p>TIG Welding</p>
+                <p>Stick Welding</p>
+                <p>Custom Fabrication</p>
+                <p>Repair and Maintenance</p>
+            </div>
             <a href="mailto:mysticarcwelding@gmail.com" class="button">Get a Quote</a>
         </section>
 
@@ -97,6 +102,12 @@
             <img src="your_image12.jpg" alt="Welding Project 12">
             <img src="your_image13.jpg" alt="Welding Project 13">
             <img src="your_image14.jpg" alt="Welding Project 14">
+        </section>
+
+        <section class="videos">
+            <h2>Our Videos</h2>
+            <!-- Add your YouTube video links here -->
+            <iframe src="https:https://youtu.be/2HkFPSyUlmY?si=gWbO1N4SxnSxZiW-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section class="social-media">
